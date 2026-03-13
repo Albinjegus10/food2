@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop List - Organic - Pasumai Palangal</title>
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="../assets/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
 
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -31,11 +31,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
     <!-- Local stylesheet -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Local component scripts -->
-    <script src="../assets/js/components.js"></script>
-    <script src="../assets/js/scroll-logo.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/scroll-logo.js"></script>
 
 </head>
 
@@ -52,61 +52,205 @@
         <!-- back-to-top end -->
 
         <!-- header section start -->
-        <header>
-            <div class="top_header py-2" style="background:#2e7d32;">
+        <header class="header_section header_1">
+            <!-- top header start -->
+            <div class="top_header_main d-none d-sm-block">
                 <div class="container">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="top_header_left d-flex align-items-center gap-3">
-                            <a href="tel:+919876543210" class="text-white text-decoration-none"><i class="fas fa-phone-alt me-1"></i>+91 98765 43210</a>
-                            <a href="mailto:info@pasumaipalangal.in" class="text-white text-decoration-none"><i class="fas fa-envelope me-1"></i>info@pasumaipalangal.in</a>
+                    <div class="header_top d-flex align-items-center justify-content-between">
+                        <div class="header_top_content d-flex pt-2">
+                            <div class="mail_text_content d-flex">
+                                <p class="mail_icon"><span><i class="far fa-envelope text-white pe-2"></i></span></p>
+                                <p class="mail_text">info@pasumaipalangal.in</p>
+                            </div>
+                            <div class="address_text_content d-flex">
+                                <p class="mail_icon"><span><i class="fas fa-map-marker-alt text-white pe-2"></i></span></p>
+                                <p class="address_text"> 2nd St, Chidambara Nagar, Subbiah Puram, Thoothukudi,</p>
+                            </div>
                         </div>
-                        <div class="top_header_right d-flex align-items-center gap-3">
-                            <div class="dropdown">
-                                <a href="#!" class="text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-1"></i>My Account</a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user-circle me-2"></i>Profile</a></li>
-                                    <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog me-2"></i>Settings</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="logout.html"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
-                                </ul>
-                            </div>
-                            <div class="top_social_links d-flex gap-2">
-                                <a href="https://www.facebook.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.twitter.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.pinterest.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
+                        <div class="header_top_socials pt-2">
+                            <ul class="list-unstyled d-flex">
+                                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f text-white pe-3"></i></a></li>
+                                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter text-white pe-3"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram text-white pe-3"></i></a></li>
+                                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in text-white"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+            <!-- top header end -->
+
+            <!-- bottom header start -->
+            <div class="header_bottom_main">
                 <div class="container">
-                    <a class="navbar-brand fw-bold fs-4" href="index.html" style="color:#2e7d32;">Pasumai Palangal</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <ul class="navbar-nav mx-auto gap-lg-3">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="shop-list.html">Shop</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                        <div class="d-flex align-items-center gap-3">
-                            <a href="shop-list.html" class="text-dark"><i class="far fa-heart fs-5"></i></a>
-                            <a href="cart.html" class="text-dark position-relative">
-                                <i class="fas fa-shopping-cart fs-5"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background:#2e7d32;">3</span>
-                            </a>
-                            <a class="btn btn-sm text-white rounded-pill px-3" href="shop-list.html" style="background:#2e7d32;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-                                <i class="fas fa-bag-shopping me-1"></i> Cart
-                            </a>
+                    <!-- web menubar start-->
+                    <div class="webMenu d-none d-lg-block position-relative">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand position-relative" href="index.html"><img src="assets/images/logo/logo2.png" alt="image_not_found"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav main_menu_list m-auto after_navbar">
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item nav_item_has_child px-2 dropdown">
+                                        <a class="nav-link active" href="shop-list.html" id="shop_submenu" role="button">Shop</a>
+                                    </li>
+                                    <li class="nav-item nav_item_has_child px-2 dropdown">
+                                        <a class="nav-link" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" href="about-us.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item nav_item_has_child px-2 dropdown">
+                                        <a class="nav-link" href="#" id="vendor_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendor</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" href="faqs.html">FAQs</a>
+                                    </li>
+                                    <li class="nav-item px-2">
+                                        <a class="nav-link" href="contact-us.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar_user me-2">
+                                <div class="navbar_user_icon">
+                                    <ul class="list-unstyled d-flex mb-0">
+                                        <li class="pe-3">
+                                            <button class="main_search_btn" data-bs-toggle="collapse" data-bs-target="#main_search_collapse" aria-expanded="false" aria-controls="main_search_collapse">
+                                                <i class="search_icon fas fa-search"></i>
+                                                <i class="search_close fas fa-times"></i>
+                                            </button>
+                                        </li>
+                                        <li class="pe-2 position-relative">
+                                            <a href="#collapseExample" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="far fa-user" data-toggle="collapse" role="button" data-target="#use_deropdown" aria-expanded="false" aria-controls="use_deropdown"></i>
+                                            </a>
+                                            <!-- user profile start -->
+                                            <div id="collapseExample" class="collapse_dropdown collapse">
+                                                <div class="dropdown_content">
+                                                    <div class="profile_info clearfix">
+                                                        <div class="user_thumbnail">
+                                                            <img src="assets/images/meta/meta1.png" alt="image_not_found">
+                                                        </div>
+                                                        <div class="user_content">
+                                                            <h4 class="user_name">Jone Doe</h4>
+                                                            <span class="user_title">Seller</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="settings_options ul_li_block clearfix">
+                                                        <li><a href="vendor-profile.html"><i class="fas fa-user-circle"></i> Profile</a></li>
+                                                        <li><a href="vendor-dashboard.html"><i class="fas fa-user-cog"></i> Settings</a></li>
+                                                        <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="pe-2"><a href="cart.html"><i class="far fa-heart"></i></a></li>
+                                        <li>
+                                            <a href="cart.html"><i class="fas fa-shopping-bag position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- webMenu end -->
+                    
+                    <!-- mobile menubar start -->
+                    <div class="mobileMenu d-block d-lg-none">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close mobile_menu_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav main_menu_list m-auto">
+                                        <li class="nav-item pe-4">
+                                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item pe-4 dropdown">
+                                            <a class="nav-link active" href="shop-list.html" id="shop_submenu" role="button">Shop</a>
+                                        </li>
+                                        <li class="nav-item pe-4 dropdown">
+                                            <a class="nav-link" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                        </li>
+                                        <li class="nav-item pe-4">
+                                            <a class="nav-link" href="about-us.html">About Us</a>
+                                        </li>
+                                        <li class="nav-item pe-4 dropdown">
+                                            <a class="nav-link" href="#" id="vendor_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendor</a>
+                                        </li>
+                                        <li class="nav-item pe-4">
+                                            <a class="nav-link" href="faqs.html">FAQs</a>
+                                        </li>
+                                        <li class="nav-item pe-4">
+                                            <a class="nav-link" href="contact-us.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar_user me-2">
+                                <div class="navbar_user_icon">
+                                    <ul class="list-unstyled d-flex mb-0">
+                                        <li class="pe-3">
+                                            <button class="main_search_btn" data-bs-toggle="collapse" data-bs-target="#main_search_collapse" aria-expanded="false" aria-controls="main_search_collapse">
+                                                <i class="search_icon fas fa-search"></i>
+                                                <i class="search_close fas fa-times"></i>
+                                            </button>
+                                        </li>
+                                        <li class="pe-2 position-relative">
+                                            <a href="#collapseExample" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="far fa-user" data-toggle="collapse" role="button" data-target="#use_deropdown" aria-expanded="false" aria-controls="use_deropdown"></i>
+                                            </a>
+                                            <!-- user profile start -->
+                                            <div id="collapseExample" class="collapse_dropdown collapse">
+                                                <div class="dropdown_content">
+                                                    <div class="profile_info clearfix">
+                                                        <div class="user_thumbnail">
+                                                            <img src="assets/images/meta/meta1.png" alt="image_not_found">
+                                                        </div>
+                                                        <div class="user_content">
+                                                            <h4 class="user_name">Jone Doe</h4>
+                                                            <span class="user_title">Seller</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="settings_options ul_li_block clearfix">
+                                                        <li><a href="vendor-profile.html"><i class="fas fa-user-circle"></i> Profile</a></li>
+                                                        <li><a href="vendor-dashboard.html"><i class="fas fa-user-cog"></i> Settings</a></li>
+                                                        <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="pe-2"><a href="cart.html"><i class="far fa-heart"></i></a></li>
+                                        <li>
+                                            <a href="cart.html"><i class="fas fa-shopping-bag position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- collapse search - start -->
+                <div class="main_search_collapse collapse" id="main_search_collapse">
+                    <div class="main_search_form position-relative card">
+                        <div class="container">
+                            <form action="#">
+                                <div class="form_item position-relative">
+                                    <input type="search" class="form-control rounded-pill py-3" name="search" placeholder="Search Your Product...">
+                                    <button type="submit" class="submit_btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </nav>
+                <!-- collapse search - end -->
+            </div>
         </header>
         <!-- header section end -->
 
@@ -126,7 +270,7 @@
                                 <div class="offcanvas-body">
                                     <div class="prdc_ctg_product_content mt-1 d-flex align-items-center">
                                         <div class="prdc_ctg_product_img d-flex justify-content-center align-items-center me-3">
-                                            <img src="../assets/images/category/cat6.png" alt="Organic Fruits">
+                                            <img src="assets/images/category/cat6.png" alt="Organic Fruits">
                                         </div>
                                         <div class="prdc_ctg_product_text">
                                             <div class="prdc_ctg_product_title my-2">
@@ -140,7 +284,7 @@
                                     </div>
                                     <div class="prdc_ctg_product_content mt-1 d-flex align-items-center">
                                         <div class="prdc_ctg_product_img d-flex justify-content-center align-items-center me-3">
-                                            <img src="../assets/images/category/cat7.png" alt="Organic Fresh Juices">
+                                            <img src="assets/images/category/cat7.png" alt="Organic Fresh Juices">
                                         </div>
                                         <div class="prdc_ctg_product_text">
                                             <div class="prdc_ctg_product_title my-2">
@@ -154,7 +298,7 @@
                                     </div>
                                     <div class="prdc_ctg_product_content mt-1 d-flex align-items-center">
                                         <div class="prdc_ctg_product_img d-flex justify-content-center align-items-center me-3">
-                                            <img src="../assets/images/category/cat8.png" alt="Organic Fresh Juices">
+                                            <img src="assets/images/category/cat8.png" alt="Organic Fresh Juices">
                                         </div>
                                         <div class="prdc_ctg_product_text">
                                             <div class="prdc_ctg_product_title my-2">
@@ -202,7 +346,7 @@
 
             <!-- Breadcrumb section start -->
             <section class="breadcrumb_sec_1 position-relative">
-                <div class="breadcrumb_wrap sec_space_mid_small" style="background-image: url(../assets/images/breadcrumb/breadcrumb1.png);">
+                <div class="breadcrumb_wrap sec_space_mid_small" style="background-image: url(assets/images/breadcrumb/breadcrumb1.png);">
                     <div class="breadcrumb_cont text-center">
                         <div class="breadcrumb_title">
                             <h2 class="text-white">Shop List</h2>
@@ -266,8 +410,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product1.png" alt="Organic Fruits">
-                                                            <img class="pic-2" src="../assets/images/product/product3.png" alt="Organic Fruits Hover">
+                                                            <img class="pic-1" src="assets/images/product/product2.png" alt="Organic Fruits">
+                                                            <img class="pic-2" src="assets/images/product/product16.png" alt="Organic Fruits Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">fruitss</span></li>
@@ -304,8 +448,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product2.png" alt="Organic Fresh Juices">
-                                                            <img class="pic-2" src="../assets/images/product/product4.png" alt="Organic Fresh Juices Hover">
+                                                            <img class="pic-1" src="assets/images/product/product17.png" alt="Organic Fresh Juices">
+                                                            <img class="pic-2" src="assets/images/product/product26.png" alt="Organic Fresh Juices Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">fruitss</span></li>
@@ -342,8 +486,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product3.png" alt="Organic Fresh Juices">
-                                                            <img class="pic-2" src="../assets/images/product/product6.png" alt="Organic Fresh Juices Hover">
+                                                            <img class="pic-1" src="assets/images/product/product33.png" alt="Organic Fresh Juices">
+                                                            <img class="pic-2" src="assets/images/product/product34.png" alt="Organic Fresh Juices Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">Greens</span></li>
@@ -380,8 +524,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product4.png" alt="Organic Fresh Juices">
-                                                            <img class="pic-2" src="../assets/images/product/product2.png" alt="Organic Fresh Juices Hover">
+                                                            <img class="pic-1" src="assets/images/product/product35.png" alt="Organic Fresh Juices">
+                                                            <img class="pic-2" src="assets/images/product/product36.png" alt="Organic Fresh Juices Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">Root Veg</span></li>
@@ -418,8 +562,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product5.png" alt="Organic Fresh Juices">
-                                                            <img class="pic-2" src="../assets/images/product/product7.png" alt="Organic Fresh Juices Hover">
+                                                            <img class="pic-1" src="assets/images/product/product37.png" alt="Organic Fresh Juices">
+                                                            <img class="pic-2" src="assets/images/product/product38.png" alt="Organic Fresh Juices Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">Greens</span></li>
@@ -456,8 +600,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product6.png" alt="Organic Fresh Juices">
-                                                            <img class="pic-2" src="../assets/images/product/product10.png" alt="Organic Fresh Juices Hover">
+                                                            <img class="pic-1" src="assets/images/product/product43.png" alt="Organic Fresh Juices">
+                                                            <img class="pic-2" src="assets/images/product/product46.png" alt="Organic Fresh Juices Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">Legumes</span></li>
@@ -494,8 +638,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product7.png" alt="Organic Fresh Juices">
-                                                            <img class="pic-2" src="../assets/images/product/product4.png" alt="Organic Fresh Juices Hover">
+                                                            <img class="pic-1" src="assets/images/product/product51.png" alt="Organic Fresh Juices">
+                                                            <img class="pic-2" src="assets/images/product/product52.png" alt="Organic Fresh Juices Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">Gourds</span></li>
@@ -532,8 +676,8 @@
                                                 <div class="product_layout_content bg-white position-relative">
                                                     <div class="product_image_wrap">
                                                         <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                            <img class="pic-1" src="../assets/images/product/product8.png" alt="Organic Fresh Juices">
-                                                            <img class="pic-2" src="../assets/images/product/product6.png" alt="Organic Fresh Juices Hover">
+                                                            <img class="pic-1" src="assets/images/product/product54.png" alt="Organic Fresh Juices">
+                                                            <img class="pic-2" src="assets/images/product/product55.png" alt="Organic Fresh Juices Hover">
                                                         </a>
                                                         <ul class="product_badge_group ul_li_block list-unstyled">
                                                             <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">Seasonal</span></li>
@@ -577,7 +721,7 @@
                                             <div class="offer_inner_content" data-aos="fade-right" data-aos-duration="1000">
                                                 <div class="offer_item_content bg-white d-flex align-items-center">
                                                     <div class="offer_item_img pe-4">
-                                                        <img src="../assets/images/offer/offer1.png" alt="Vegan Egg Replacer">
+                                                        <img src="assets/images/offer/offer1.png" alt="Vegan Egg Replacer">
                                                     </div>
                                                     <div class="offer_item_text">
                                                         <div class="offer_item_title">
@@ -610,7 +754,7 @@
                                             <div class="offer_inner_content" data-aos="fade-left" data-aos-duration="1000">
                                                 <div class="offer_item_content bg-white d-flex align-items-center">
                                                     <div class="offer_item_img pe-4">
-                                                        <img src="../assets/images/offer/offer2.png" alt="Organic Cold Press Oil">
+                                                        <img src="assets/images/offer/offer2.png" alt="Organic Cold Press Oil">
                                                     </div>
                                                     <div class="offer_item_text">
                                                         <div class="offer_item_title">
@@ -643,7 +787,7 @@
                                             <div class="offer_inner_content" data-aos="fade-right" data-aos-duration="2000">
                                                 <div class="offer_item_content bg-white d-flex align-items-center">
                                                     <div class="offer_item_img pe-4">
-                                                        <img src="../assets/images/offer/offer4.png" alt="Organic Honey">
+                                                        <img src="assets/images/offer/offer4.png" alt="Organic Honey">
                                                     </div>
                                                     <div class="offer_item_text">
                                                         <div class="offer_item_title">
@@ -676,7 +820,7 @@
                                             <div class="offer_inner_content" data-aos="fade-left" data-aos-duration="2000">
                                                 <div class="offer_item_content bg-white d-flex align-items-center">
                                                     <div class="offer_item_img pe-4">
-                                                        <img src="../assets/images/offer/offer2.png" alt="Organic Rice">
+                                                        <img src="assets/images/offer/offer2.png" alt="Organic Rice">
                                                     </div>
                                                     <div class="offer_item_text">
                                                         <div class="offer_item_title">
@@ -782,64 +926,133 @@
         <!-- main body end -->
 
         <!-- footer section start -->
-        <footer style="background:#1b5e20; color:#fff; padding:60px 0 20px;">
-            <div class="container">
-                <div class="row g-4 mb-4">
-
-                    <!-- Brand Column -->
-                    <div class="col-lg-4 col-md-6">
-                        <h4 class="fw-bold mb-3" style="color:#a5d6a7;">Pasumai Palangal</h4>
-                        <p class="mb-3" style="color:#c8e6c9;">Your trusted source for certified organic produce, delivered fresh from farm to your doorstep across Tamil Nadu.</p>
-                        <div class="d-flex gap-3">
-                            <a href="https://www.facebook.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.twitter.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.pinterest.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white fs-5"><i class="fab fa-pinterest-p"></i></a>
-                            <a href="https://www.youtube.com/pasumaipalangal" target="_blank" rel="noopener noreferrer" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+        <footer class="footer_section position-relative">
+            <div class="footer_section_wrap sec_top_space_50" style="background-image: url(assets/images/footer/footer.png)">
+                <div class="container">
+                    <div class="footer_top_content d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                        <div class="footer_top_logo">
+                            <a href="index.html"><img src="assets/images/logo/logo2.png" alt="image_not_found"></a>
+                        </div>
+                        <div class="footer_top_subs position-relative">
+                            <input class="rounded-pill" type="search" name="search" placeholder="Your Phone Number">
+                            <a href="index.html"><button type="button" class="btn custom_btn rounded-pill text-white position-absolute">Subscribe Now <i class="fas fa-long-arrow-alt-right"></i></button></a>
+                        </div>
+                        <div class="footer_top_social">
+                            <ul class="list-unstyled d-flex justify-content-end">
+                                <li class="me-3"><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                <li class="me-3"><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="me-3"><a href="index.html"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="index.html"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-
-                    <!-- Information Column -->
-                    <div class="col-lg-2 col-md-6">
-                        <h6 class="fw-bold text-uppercase mb-3" style="color:#a5d6a7;">Information</h6>
-                        <ul class="list-unstyled" style="color:#c8e6c9;">
-                            <li class="mb-2"><a href="about.html" class="text-decoration-none" style="color:#c8e6c9;">About Us</a></li>
-                            <li class="mb-2"><a href="blog.html" class="text-decoration-none" style="color:#c8e6c9;">Our Blog</a></li>
-                            <li class="mb-2"><a href="faq.html" class="text-decoration-none" style="color:#c8e6c9;">FAQs</a></li>
-                            <li class="mb-2"><a href="index.html" class="text-decoration-none" style="color:#c8e6c9;">Privacy Policy</a></li>
-                            <li class="mb-2"><a href="terms.html" class="text-decoration-none" style="color:#c8e6c9;">Terms &amp; Conditions</a></li>
-                        </ul>
+                    <div class="footer_inner_content sec_space_xs_70">
+                        <div class="footer_inner_content_wrap">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="footer_inner_choose_content">
+                                        <div class="footer_inner_choose_title">
+                                            <h4>
+                                                <a href="index.html" class="text-white">Why People Like us</a>
+                                            </h4>
+                                        </div>
+                                        <div class="footer_inner_choose_desc pt-2">
+                                            <p>Pasumai Palangal is a trusted family-owned business in Tuticorin that has been providing high-quality fruits for three generations</p>
+                                        </div>
+                                        <div class="footer_inner_choose">
+                                            <a href="index.html"><button type="button" class="btn custom_btn rounded-pill px-4 text-white">View More <i class="fas fa-long-arrow-alt-right"></i></button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="footer_inner_info_content">
+                                        <div class="footer_inner_info_title">
+                                            <h4>
+                                                <a href="index.html" class="text-white">Information</a>
+                                            </h4>
+                                        </div>
+                                        <div class="footer_inner_info_item pt-2">
+                                            <ul class="list-unstyled">
+                                                <li><a href="index.html">About Us</a></li>
+                                                <li><a href="index.html">Delivery Information</a></li>
+                                                <li><a href="index.html">Privacy Policy</a></li>
+                                                <li><a href="index.html">Terms & Conditions</a></li>
+                                                <li><a href="index.html">Return Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="footer_inner_acct_content">
+                                        <div class="footer_inner_acct_title">
+                                            <h4>
+                                                <a href="index.html" class="text-white">My Account</a>
+                                            </h4>
+                                        </div>
+                                        <div class="footer_inner_acct_item pt-2">
+                                            <ul class="list-unstyled">
+                                                <li><a href="index.html">My Account</a></li>
+                                                <li><a href="index.html">Shopping Cart</a></li>
+                                                <li><a href="index.html">Wishlist</a></li>
+                                                <li><a href="index.html">Order History</a></li>
+                                                <li><a href="index.html">International Orders</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="footer_inner_cotc_content">
+                                        <div class="footer_inner_ctc_title">
+                                            <h4>
+                                                <a href="index.html" class="text-white">Contact Us</a>
+                                            </h4>
+                                        </div>
+                                        <div class="footer_inner_ctc_info pt-2 text-white">
+                                            <p>Address: <font>2nd St, Chidambara Nagar, Subbiah Puram, Thoothukudi,</font></p>
+                                            <p>Email: <font>Pasumaipalangal@gmail.com</font></p>
+                                            <p>Phone: <font>094444 30999</font></p>
+                                            <div class="footer_inner_payment_ctc">
+                                                <div class="footer_inner_payment_title">
+                                                    <h5 class="text-white">Payment Accepted</h5>
+                                                </div>
+                                                <div class="footer_inner_payment_thumb pt-3">
+                                                    <a href="index.html"><img src="assets/images/payment/payment.png" alt="image_not_found"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- My Account Column -->
-                    <div class="col-lg-2 col-md-6">
-                        <h6 class="fw-bold text-uppercase mb-3" style="color:#a5d6a7;">My Account</h6>
-                        <ul class="list-unstyled" style="color:#c8e6c9;">
-                            <li class="mb-2"><a href="profile.html" class="text-decoration-none" style="color:#c8e6c9;">My Profile</a></li>
-                            <li class="mb-2"><a href="orders.html" class="text-decoration-none" style="color:#c8e6c9;">Order History</a></li>
-                            <li class="mb-2"><a href="shop-list.html" class="text-decoration-none" style="color:#c8e6c9;">My Wishlist</a></li>
-                            <li class="mb-2"><a href="cart.html" class="text-decoration-none" style="color:#c8e6c9;">Shopping Cart</a></li>
-                            <li class="mb-2"><a href="checkout.html" class="text-decoration-none" style="color:#c8e6c9;">Checkout</a></li>
-                        </ul>
+                    <div class="footer_bootom_content">
+                        <div class="footer_bootom_wrap">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="footer_bootom_copyright">
+                                            <p>Copyright 2026 <font>Kaira technologies</font> Inc. All rights reserved.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="footer_bootom_privicy_cont d-flex justify-content-center align-items-center">
+                                            <div class="footer_bootom_privicy pe-5">
+                                                <a href="index.html">
+                                                    <p class="priv position-relative">Privacy Policy</p>
+                                                </a>
+                                            </div>
+                                            <div class="footer_bootom_terms pe-5">
+                                                <p class="position-relative">Terms of Use</p>
+                                            </div>
+                                            <div class="footer_bootom_refunds">
+                                                <p>Sales and Refunds</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Contact Us Column -->
-                    <div class="col-lg-4 col-md-6">
-                        <h6 class="fw-bold text-uppercase mb-3" style="color:#a5d6a7;">Contact Us</h6>
-                        <ul class="list-unstyled" style="color:#c8e6c9;">
-                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2" style="color:#a5d6a7;"></i>14, Green Park Road, Coimbatore &ndash; 641 001, Tamil Nadu, India</li>
-                            <li class="mb-2"><i class="fas fa-phone-alt me-2" style="color:#a5d6a7;"></i><a href="tel:+919876543210" class="text-decoration-none" style="color:#c8e6c9;">+91 98765 43210</a></li>
-                            <li class="mb-2"><i class="fas fa-phone-alt me-2" style="color:#a5d6a7;"></i><a href="tel:+914224567890" class="text-decoration-none" style="color:#c8e6c9;">+91 422 456 7890</a></li>
-                            <li class="mb-2"><i class="fas fa-envelope me-2" style="color:#a5d6a7;"></i><a href="mailto:info@pasumaipalangal.in" class="text-decoration-none" style="color:#c8e6c9;">info@pasumaipalangal.in</a></li>
-                            <li class="mb-2"><i class="fas fa-clock me-2" style="color:#a5d6a7;"></i>Mon &ndash; Sat: 8:00 AM &ndash; 8:00 PM</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <hr style="border-color:#388e3c;">
-                <div class="d-flex flex-wrap justify-content-between align-items-center pt-2" style="color:#a5d6a7; font-size:0.875rem;">
-                    <p class="mb-0">&copy; 2026 Pasumai Palangal. All rights reserved.</p>
-                    <p class="mb-0">Designed with <i class="fas fa-heart" style="color:#ef5350;"></i> for a greener tomorrow.</p>
                 </div>
             </div>
         </footer>
@@ -862,7 +1075,7 @@
                                         <div class="product_layout_content bg-white position-relative">
                                             <div class="product_image_wrap">
                                                 <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                    <img src="../assets/images/product/product9.png" alt="Organic Fruits">
+                                                    <img src="assets/images/product/product56.png" alt="Organic Fruits">
                                                 </a>
                                                 <ul class="product_badge_group ul_li_block list-unstyled">
                                                     <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">fruitss</span></li>
@@ -899,7 +1112,7 @@
                                         <div class="product_layout_content bg-white position-relative">
                                             <div class="product_image_wrap">
                                                 <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                    <img src="../assets/images/product/product10.png" alt="Organic Fresh Juices">
+                                                    <img src="assets/images/product/product2.png" alt="Organic Fresh Juices">
                                                 </a>
                                                 <ul class="product_badge_group ul_li_block list-unstyled">
                                                     <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">fruitss</span></li>
@@ -936,7 +1149,7 @@
                                         <div class="product_layout_content bg-white position-relative">
                                             <div class="product_image_wrap">
                                                 <a class="product_image d-flex justify-content-center align-items-center" href="product-detail.html">
-                                                    <img src="../assets/images/product/product11.png" alt="Organic Fresh Juices">
+                                                    <img src="assets/images/product/product16.png" alt="Organic Fresh Juices">
                                                 </a>
                                                 <ul class="product_badge_group ul_li_block list-unstyled">
                                                     <li><span class="product_badge badge_meats position-absolute rounded-pill text-uppercase">Greens</span></li>
@@ -982,19 +1195,19 @@
                 <div class="modal-content position-relative">
                     <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-body p-0">
-                        <div class="container-fluid product10_wrap sec_space_small" style="background-image: url(../assets/images/backgrounds/bg17.png)">
+                        <div class="container-fluid product10_wrap sec_space_small" style="background-image: url(assets/images/backgrounds/bg17.png)">
                             <div class="row justify-content-center p-5">
                                 <div class="col-lg-6">
                                     <div class="product10_thumb_content d-flex flex-column">
                                         <div class="product11_slide_item">
                                             <div class="d-flex justify-content-center align-items-center position-relative overflow-hidden">
-                                                <img src="../assets/images/product/product40.png" alt="Product Main View">
+                                                <img src="assets/images/product/product17.png" alt="Product Main View">
                                             </div>
                                         </div>
                                         <div class="product10_thumb_item product11_slide_thumb d-flex gap-2 mt-3">
-                                            <div class="thumb_item"><a href="product-detail.html"><img src="../assets/images/product/product6.png" alt="Thumb 1"></a></div>
-                                            <div class="thumb_item"><a href="product-detail.html"><img src="../assets/images/product/product8.png" alt="Thumb 2"></a></div>
-                                            <div class="thumb_item"><a href="product-detail.html"><img src="../assets/images/product/product23.png" alt="Thumb 3"></a></div>
+                                            <div class="thumb_item"><a href="product-detail.html"><img src="assets/images/product/product26.png" alt="Thumb 1"></a></div>
+                                            <div class="thumb_item"><a href="product-detail.html"><img src="assets/images/product/product33.png" alt="Thumb 2"></a></div>
+                                            <div class="thumb_item"><a href="product-detail.html"><img src="assets/images/product/product34.png" alt="Thumb 3"></a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1070,7 +1283,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <!-- Local custom JS -->
-    <script src="../assets/js/custom.js"></script>
+    <script src="assets/js/custom.js"></script>
 
     <script>
         // Initialize AOS

@@ -1171,7 +1171,8 @@ p {
 }
 
 .banner_title {
-  width: 810px;
+  width: 100%;
+  max-width: 810px;
 }
 .banner_title h1 {
   color: #333333;
@@ -1230,7 +1231,8 @@ p {
   z-index: 2;
 }
 .banner_search_bar input {
-  width: 650px;
+  width: 100%;
+  max-width: 650px;
   height: auto;
 }
 .banner_search_bar input::-webkit-input-placeholder {
@@ -2225,7 +2227,8 @@ p {
 }
 
 .product_tabnav_2 .nav-item button {
-  width: 19rem !important;
+  width: 100% !important;
+  max-width: 19rem !important;
   border: 2px solid #f0f0f0 !important;
   cursor: pointer;
 }
@@ -3084,7 +3087,8 @@ p {
 }
 
 .footer_top_subs input {
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
   color: #a6a6a6;
   padding: 20px;
   background-color: #1b1b1b;
@@ -3500,7 +3504,8 @@ div#main_search_collapse2 {
 }
 
 .top_inner_searchbar input {
-  width: 520px;
+  width: 100%;
+  max-width: 520px;
   border: 1px solid #e6e6e6;
   outline: none;
 }
@@ -3515,7 +3520,8 @@ div#main_search_collapse2 {
 }
 
 .top_inner_searchbar2 input {
-  width: 520px;
+  width: 100%;
+  max-width: 520px;
   border: 1px solid #e6e6e6;
   outline: none;
 }
@@ -5714,7 +5720,8 @@ input[type=text]:focus {
 }
 
 .product8_sec_wrap .nav-link {
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   height: 80px;
   color: #000000 !important;
   font-size: 20px;
@@ -8396,7 +8403,18 @@ input[type=text]:focus {
 /* media screen and (max-width: 1080px) - start */
 @media screen and (max-width: 1079px) {
   .top_inner_searchbar input {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
+  }
+
+  .banner_search_bar input {
+    max-width: 100%;
+    padding: 12px 20px;
+  }
+
+  .banner_title {
+    max-width: 100%;
+    padding: 0 20px;
   }
 
   .sale_item .sale_big_title h3,
@@ -8493,6 +8511,22 @@ input[type=text]:focus {
 
   .banner_section_item {
     padding: 50px 0;
+  }
+
+  .banner_search_bar input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .banner_title {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .product8_sec_wrap .nav-link {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 15px 10px;
   }
 
   .top_inner_content, .top_inner_searchbar, .logo, .header_top {

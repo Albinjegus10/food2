@@ -1,0 +1,246 @@
+/* ================================================== 
+ * Mobile Responsive Fixes
+ * Additional responsive improvements for mobile devices
+ * ================================================== */
+
+/* Prevent horizontal scroll on all devices */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.body-wrap {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Banner Search Bar - Mobile Optimization */
+.banner_search_bar {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.banner_search_bar input {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 15px 20px;
+  font-size: 14px;
+}
+
+.banner_search_bar .select_option {
+  width: 100%;
+  max-width: 180px;
+  right: 5px;
+}
+
+/* Banner Title - Mobile Optimization */
+.banner_title {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 15px;
+}
+
+.banner_title h1 {
+  font-size: clamp(1.5rem, 5vw, 4.0625rem);
+  word-wrap: break-word;
+}
+
+/* Product Category Tabs - Mobile Optimization */
+.product_tabnav_2 .nav-item button {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding: 12px 15px;
+}
+
+.product8_sec_wrap .nav-link {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  min-height: 60px;
+  font-size: 16px;
+  padding: 15px 10px;
+}
+
+/* Search Bars - Mobile Optimization */
+.top_inner_searchbar input,
+.top_inner_searchbar2 input {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Footer Subscription - Mobile Optimization */
+.footer_top_subs input {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 15px;
+}
+
+/* Tablet Devices (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner_search_bar input {
+    max-width: 500px;
+  }
+  
+  .banner_title {
+    max-width: 600px;
+  }
+  
+  .product8_sec_wrap .nav-link {
+    max-width: 350px;
+    font-size: 18px;
+  }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .banner_search_bar input {
+    max-width: 450px;
+  }
+  
+  .banner_title h1 {
+    font-size: 2rem;
+  }
+  
+  .product_tabnav_2 .nav-item button {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
+
+/* Mobile Portrait (320px - 575px) */
+@media screen and (max-width: 575px) {
+  .banner_search_bar {
+    margin-top: 2rem;
+  }
+  
+  .banner_search_bar input {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+  
+  .banner_search_bar .select_option {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    transform: none;
+    top: 0;
+    right: 0;
+  }
+  
+  .banner_title h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  
+  .product8_sec_wrap .nav-link {
+    font-size: 14px;
+    padding: 12px 8px;
+    min-height: 50px;
+  }
+  
+  .product_tabnav_2 .nav-item button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  
+  /* Stack search bar elements vertically on very small screens */
+  .banner_search_bar .form-control {
+    margin-bottom: 10px;
+  }
+  
+  /* Ensure footer input is full width */
+  .footer_top_subs {
+    padding: 0 15px;
+  }
+  
+  .footer_top_subs button {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    transform: none;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* Extra Small Devices (< 375px) */
+@media screen and (max-width: 374px) {
+  .banner_title h1 {
+    font-size: 1.25rem;
+  }
+  
+  .banner_search_bar input {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  
+  .product8_sec_wrap .nav-link {
+    font-size: 13px;
+    padding: 10px 6px;
+  }
+  
+  .product_tabnav_2 .nav-item button {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+}
+
+/* Touch-Friendly Improvements */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch target sizes for mobile devices */
+  button,
+  a,
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .nav-link {
+    padding: 12px 15px;
+  }
+  
+  .product_action_btns a {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Prevent zoom on input focus (iOS) */
+@media screen and (max-width: 767px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Container padding adjustments for mobile */
+@media screen and (max-width: 575px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .banner_section_item {
+    padding: 30px 0;
+  }
+  
+  .sec_space_xxlarge {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .sec_space_large {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
